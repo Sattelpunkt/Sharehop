@@ -1,0 +1,36 @@
+<?php
+$this->renderPart('mainHeader');
+$this->renderPart('mainNavigation');
+?>
+
+    <div class="col d-flex flex-column h-sm-100">
+        <div class="content">
+
+            <div class="col-12 box">
+                <div class="boxheader">Mitarbeiter Nummer</div>
+                <div class="boxbody">
+
+
+                    <form class="row g-3" method="post">
+
+                        <div class="col-md-3">
+                            <label for="inputCity" class="form-label">Mitarbeiternummer:</label>
+                            <input type="text" class="form-control form-control-sm" id="inputCity" name="id" required>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary graybutton">Anzeigen</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="boxfooter"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+<?php
+$this->renderPart('mainFooter');
+?>

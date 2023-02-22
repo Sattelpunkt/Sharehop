@@ -1,0 +1,54 @@
+<?php
+$this->renderPart('mainHeader');
+?>
+    <div class="col d-flex flex-column h-sm-100">
+        <div class="content">
+            <div class="col-12 boxklein">
+                <div class="boxheader">Login</div>
+                <div class="boxbody">
+                    <center>
+
+                        <?php
+                        $this->displayMSG();
+                        ?>
+
+                        <form action="https://<?= URL ?>login" method="post">
+                            <div class="form-group col-md-6">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" name="username"
+                                           aria-describedby="usernamelHelp" autocomplete="false" required>
+                                    <small id="usernameHelpBlock" class="form-text text-muted">
+                                        prototyp
+                                    </small>
+
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="password class=" form-label">Passwort</label>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                           aria-describedby="passwordHelp" autocomplete="false" required>
+                                    <small id="passwordHelpBlock" class="form-text text-muted">
+                                        12345
+                                    </small>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary graybutton">Login</button>
+                                </div>
+                                <br/>
+                    </center>
+                    </form>
+                </div>
+                <div class="boxfooter"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+<?php
+$this->renderPart('mainFooter');

@@ -1,0 +1,99 @@
+<div class="container-fluid overflow-hidden">
+    <div class="row vh-100 overflow-auto">
+        <div class="sidebar p-2" style="width: 240px;">
+            <div class="sidebar-header">
+                <?php
+                $this->displayMSG();
+                ?>
+                <span class="fs-4">Mitarbeiter</span>
+            </div>
+            <ul class="nav nav-pills flex-column mb-auto navigation">
+                <li class="nav-item">
+                    <a href="https://<?= URL ?>allMitarbeiter" class="nav-link text-white ">
+
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Alle Mitarbeiter
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="https://<?= URL ?>oneMitarbeiter" class="nav-link text-white">
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Einen Mitarbeiter ausgeben
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Mitarbeiter einzeln ausgeben
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://<?= URL ?>newMitarbeiter" class="nav-link text-white">
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Neuen Mitarbeiter angelegen
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white">
+                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Mitarbeiter löschen
+                    </a>
+                </li>
+                <br/>
+                <div class="sidebar-header">
+                    <span class="fs-4">Kunden</span>
+                </div>
+                <ul class="nav nav-pills flex-column mb-auto navigation">
+                    <li class="nav-item">
+                        <a href="https://<?= URL ?>home" class="nav-link text-white ">
+
+                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Alle Kunden
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Einen Kunden ausgeben
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Kunden einzeln ausgeben
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Neuen Kunden angelegen
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp; &nbsp;Kunde löschen
+                        </a>
+                    </li>
+
+                    <br/><br/>
+
+                    <div class="sidebar-header">
+                        <span class="fs-4"> Allgemein</span>
+                    </div>
+
+                    <li class="nav-item">
+                        <a href="https://<?= URL ?>intern" class="nav-link text-white">
+                            <i class="fa fa-home" aria-hidden="true"></i>&nbsp; &nbsp;Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://<?= URL ?>logout" class="nav-link text-white">
+                            <i class="fas fa-sign-out-alt"></i>&nbsp; &nbsp;Ausloggen
+                        </a>
+                    </li>
+                </ul>
+
+
+                <br/><br/><br/>
+
+                <div class="position-absolute bottom-0 start- sitebar-bottom">
+
+
+                    © <?= $this->output['year'] ?>
+                    &nbsp;<?= $this->output['autor'] ?> &nbsp;
+
+                </div>
+        </div>

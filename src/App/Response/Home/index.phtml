@@ -1,0 +1,29 @@
+<?php
+$this->renderPart('mainHeader');
+?>
+    <div class="col d-flex flex-column h-sm-100">
+        <div class="content">
+            <div class="col-12 boxklein">
+                <div class="boxheader">Willkommen bei der Sharehop GmbH Verwaltung</div>
+                <div class="boxbody">
+                    <center>
+
+                        <?php
+                        $this->displayMSG();
+                        ?>
+
+                        <center>Hier geht es zum <br /><br /><a href="https://<?= URL ?>login">Login</a></center>
+                </div>
+                <div class="boxfooter"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+<?php
+$this->renderPart('mainFooter');

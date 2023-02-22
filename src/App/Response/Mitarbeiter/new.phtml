@@ -1,0 +1,69 @@
+<?php
+$this->renderPart('mainHeader');
+$this->renderPart('mainNavigation');
+?>
+
+    <div class="col d-flex flex-column h-sm-100">
+        <div class="content">
+
+            <div class="col-12 box">
+                <div class="boxheader">Neuen Mitarbeiter anlegen</div>
+                <div class="boxbody">
+
+
+                    <form class="row g-3" method="post">
+
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Vorname</label>
+                            <input type="text" class="form-control" id="inputCity" name="vorname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Nachname</label>
+                            <input type="text" class="form-control" id="inputCity" name="nachname" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="inputZip" class="form-label">Straße</label>
+                            <input type="text" class="form-control" id="inputZip" name="strasse" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">PLZ</label>
+                            <input type="text" class="form-control" id="inputZip" name="plz" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputZip" class="form-label">Ort</label>
+                            <input type="text" class="form-control" id="inputZip" name="ort" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Telefon</label>
+                            <input type="text" class="form-control" id="inputCity" name="telefon">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">E-Mail</label>
+                            <input type="text" class="form-control" id="inputCity" name="email">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">Firma</label>
+                            <select id="inputState" class="form-select" name="firma" required>
+                                <?php foreach ($this->__get('firmen') as $firma) { ?>
+                                <option value="<?= $firma->getFirmaId() ?>"><?= $firma->getName() ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary graybutton">Anlegen</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="boxfooter"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+<?php
+$this->renderPart('mainFooter');
+?>
